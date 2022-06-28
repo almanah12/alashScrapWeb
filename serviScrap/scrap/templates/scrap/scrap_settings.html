@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Table
+{% endblock %}
+
+{% block content %}
+<div class="row mx-auto">
+    <div class="col-md-6 mx-auto">
+        <form method="POST" action="">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" class="btn btn-dark" value="Сохранить">
+
+        </form>
+    </div>
+</div>
+
+{% endblock %}
+
+
